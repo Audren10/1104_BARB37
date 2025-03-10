@@ -230,3 +230,7 @@ Y = [0,1,0,0,1,0,0,1]
 T = [0,1,2,3,4,5,6,7]
 t = np.linspace(2,5,100)
 plt.plot(CubicSpline(T,X)(t),CubicSpline(T,Y)(t))
+plt.show()
+
+#La vraie solution est celle du devoir02. Ici on montre que contrairement aux Bsplines (devoir 3), il ne suffit pas d'ajouter des pts d'interpolation
+# pour obtenir une version périodique... La solution du devoir 2 était donc un peu plus complexe à coder que celle du devoir 3 :-) 
